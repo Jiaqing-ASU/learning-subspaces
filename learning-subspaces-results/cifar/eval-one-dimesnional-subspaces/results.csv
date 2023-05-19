@@ -1,0 +1,2 @@
+Date Finished,Name,curr_acc1,best_acc1,train_loss,tvdist,ensemble_acc,feat_cossim,m0_acc,epoch
+05-17-23_10:27:27, id=lines+ln=0.0+beta=1.0+num_samples=1+seed=1+try=0, 0.8667, 0.8667, 0.3058, 0.8667, 0.8667, 0.0019883953500539064, 0.8609, 80

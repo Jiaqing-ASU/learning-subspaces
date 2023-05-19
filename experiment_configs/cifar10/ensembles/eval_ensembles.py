@@ -29,7 +29,7 @@ def samples(n, k):
 
 
 def main():
-    train_epochs = 160
+    train_epochs = 80
     args.label_noise = 0.0
 
     # TODO: change these paths -- this is an example.
@@ -72,6 +72,20 @@ def main():
             args.save = False
             args.save_data = True
             args.pretrained = True
+
+            args.batch_size = 128
+            args.output_size = 1000
+            args.trainswa = False
+            args.label_smoothing = None
+            args.device = "cpu"
+            args.optimizer = "sgd"
+            args.momentum = 0
+            args.wd = 1e-4
+            args.lr_policy = "cosine_lr"
+            args.log_interval = 100
+            args.trainer = "default"
+            args.lr = 0.1
+            args.test_freq = 10
 
             run()
 

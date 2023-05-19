@@ -4,9 +4,15 @@
 #
 import matplotlib.pyplot as plt
 
-import viz.utils as utils
-from viz.config import fs_helper
-from viz.config import helper
+import sys
+sys.path.append("viz")
+import utils as utils
+from config import fs_helper
+from config import helper
+
+# import viz.utils as utils
+# from viz.config import fs_helper
+# from viz.config import helper
 
 
 def lvh_helper(ax, setxax=True, setyax=True):

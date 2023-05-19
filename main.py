@@ -57,6 +57,7 @@ def main():
     # Make a list of models, instead of a single model.
     # This is not for training subspaces, but rather for the ensemble & SWA baselines.
     models = [utils.get_model() for _ in range(args.num_models)]
+    print("models length:", len(models))
 
     # when training the SWA baseline, turn off the gradient to all but the first model.
     if args.trainswa:
@@ -84,6 +85,8 @@ def main():
                 n = 0
                 for pretrained_dict in pretrained_dicts:
                     print(num_models_filled)
+                    if num_models_filled >= len(models):
+                        break
                     model_dict = models[num_models_filled].state_dict()
                     pretrained_dict = {
                         k: v
@@ -104,7 +107,7 @@ def main():
                 print(f"=> No checkpoint found at '{resume}'")
 
     # Put models on the GPU.
-    models = [utils.set_gpu(m) for m in models]
+    # models = [utils.set_gpu(m) for m in models]
 
     # Get training loss.
     if args.label_smoothing is None:
