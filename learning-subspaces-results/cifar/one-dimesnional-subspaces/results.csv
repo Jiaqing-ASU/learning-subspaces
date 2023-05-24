@@ -1,3 +1,0 @@
-Date Finished,Name,curr_acc1,best_acc1,train_loss,norm,cossim,epoch
-05-17-23_04:01:40, id=lines+ln=0.0+beta=1.0+num_samples=1+seed=0+try=0, 0.8609, 0.8609, 0.3137, 73.57616424560547, 0.001793888513930142, 80
-05-17-23_10:27:27, id=lines+ln=0.0+beta=1.0+num_samples=1+seed=1+try=0, 0.8667, 0.8667, 0.3058, 73.55608367919922, 0.0019883953500539064, 80

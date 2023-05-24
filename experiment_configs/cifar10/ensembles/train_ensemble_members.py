@@ -24,7 +24,7 @@ if __name__ == "__main__":
         args.conv_type = "StandardConv"
         args.bn_type = "StandardBN"
         args.conv_init = "kaiming_normal"
-        args.epochs = 80
+        args.epochs = 10
         args.warmup_length = 5
         args.data_seed = 0
         args.name = f"id=base+ln={args.label_noise}+seed={args.seed}"

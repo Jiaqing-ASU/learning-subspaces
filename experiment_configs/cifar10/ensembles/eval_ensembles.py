@@ -29,7 +29,7 @@ def samples(n, k):
 
 
 def main():
-    train_epochs = 80
+    train_epochs = 10
     args.label_noise = 0.0
 
     # TODO: change these paths -- this is an example.

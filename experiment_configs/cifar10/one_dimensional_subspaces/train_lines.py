@@ -30,7 +30,7 @@ if __name__ == "__main__":
         args.bn_type = "LinesBN"
         args.conv_init = "kaiming_normal"
         args.trainer = "train_one_dim_subspaces"
-        args.epochs = 80
+        args.epochs = 10
         args.warmup_length = 5
         args.data_seed = 0
         args.train_update_bn = True
