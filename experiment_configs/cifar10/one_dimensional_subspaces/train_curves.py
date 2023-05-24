@@ -30,11 +30,24 @@ if __name__ == "__main__":
         args.bn_type = "CurvesBN"
         args.conv_init = "kaiming_normal"
         args.trainer = "train_one_dim_subspaces"
-        args.epochs = 160
+        args.epochs = 10
         args.warmup_length = 5
         args.data_seed = 0
         args.train_update_bn = True
         args.update_bn = True
+
+        args.batch_size = 128
+        args.num_models = 2
+        args.output_size = 1000
+        args.trainswa = False
+        args.resume = False
+        args.label_smoothing = None
+        args.device = "cpu"
+        args.optimizer = "sgd"
+        args.momentum = 0
+        args.wd = 1e-4
+        args.lr_policy = "cosine_lr"
+        args.log_interval = 100
 
         args.name = (
             f"id=curves+ln={args.label_noise}"

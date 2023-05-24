@@ -20,7 +20,7 @@ if __name__ == "__main__":
     )
 
     for seed in range(2):
-        args.epochs = 160
+        args.epochs = 10
         args.seed = seed
         args.lr = 0.1
         args.label_noise = 0.0
@@ -37,6 +37,19 @@ if __name__ == "__main__":
         args.bn_type = "LinesBN"
         args.conv_init = "kaiming_normal"
 
+        args.batch_size = 128
+        args.num_models = 2
+        args.output_size = 1000
+        args.trainswa = False
+        args.label_smoothing = None
+        args.device = "cpu"
+        args.optimizer = "sgd"
+        args.momentum = 0
+        args.wd = 1e-4
+        args.lr_policy = "cosine_lr"
+        args.log_interval = 100
+        args.warmup_length = 5
+        
         name_string = (
             f"id=lines-layerwise+ln={args.label_noise}"
             f"+beta={args.beta}"
