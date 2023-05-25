@@ -139,5 +139,5 @@ if __name__ == "__main__":
         fontsize=fs_helper("legend"),
     )
 
-    # plt.show()
-    plt.savefig("one_dimensional_subspaces.pdf", bbox_inches="tight")
+    plt.show()
+    # plt.savefig("one_dimensional_subspaces.pdf", bbox_inches="tight")
