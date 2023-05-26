@@ -11,13 +11,24 @@
 #SBATCH --mail-type=ALL # Send an e-mail when a job starts, stops, or fails
 #SBATCH --export=NONE   # Purge the job-submitting shell environment
 
+module load mamba/latest
+source activate ~/.conda/envs/myenv3
+
+echo "myenv3 loaded"
+
 python experiment_configs/cifar10/ensembles/train_ensemble_members.py
 python experiment_configs/cifar10/ensembles/eval_ensembles.py
+
+echo "ensembles done"
 
 python experiment_configs/cifar10/one_dimensional_subspaces/train_lines.py
 python experiment_configs/cifar10/one_dimensional_subspaces/train_lines_layerwise.py
 python experiment_configs/cifar10/one_dimensional_subspaces/train_curves.py
 
+echo "one dimensional subspaces done"
+
 python experiment_configs/cifar10/one_dimensional_subspaces/eval_lines.py
 python experiment_configs/cifar10/one_dimensional_subspaces/eval_lines_layerwise.py
 python experiment_configs/cifar10/one_dimensional_subspaces/eval_curves.py
+
+echo "evaluation of one dimensional subspaces done"
