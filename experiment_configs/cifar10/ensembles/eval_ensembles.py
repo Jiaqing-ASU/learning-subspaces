@@ -74,10 +74,12 @@ def main():
             args.pretrained = True
 
             args.batch_size = 128
+            args.num_models = 2
             args.output_size = 1000
             args.trainswa = False
+            args.resume = False
             args.label_smoothing = None
-            args.device = "cpu"
+            args.device = "cuda"
             args.optimizer = "sgd"
             args.momentum = 0
             args.wd = 1e-4
@@ -86,6 +88,7 @@ def main():
             args.trainer = "default"
             args.lr = 0.1
             args.test_freq = 10
+            args.workers = 16
 
             run()
 

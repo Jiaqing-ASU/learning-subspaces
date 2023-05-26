@@ -42,13 +42,14 @@ if __name__ == "__main__":
         args.trainswa = False
         args.resume = False
         args.label_smoothing = None
-        args.device = "cpu"
+        args.device = "cuda"
         args.optimizer = "sgd"
         args.momentum = 0
         args.wd = 1e-4
         args.lr_policy = "cosine_lr"
         args.log_interval = 100
-
+        args.workers = 16
+        
         args.name = (
             f"id=lines-layerwise+ln={args.label_noise}"
             f"+beta={args.beta}"

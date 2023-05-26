@@ -38,7 +38,7 @@ if __name__ == "__main__":
         args.trainswa = False
         args.resume = False
         args.label_smoothing = None
-        args.device = "cpu"
+        args.device = "cuda"
         args.optimizer = "sgd"
         args.momentum = 0
         args.wd = 1e-4
@@ -47,7 +47,8 @@ if __name__ == "__main__":
         args.trainer = "default"
         args.lr = 0.1
         args.test_freq = 10
-
+        args.workers = 16
+        
         # TODO: change these paths -- this is an example.
         args.data = "~/data"
         args.log_dir = "learning-subspaces-results/cifar/train-ensemble-members"
