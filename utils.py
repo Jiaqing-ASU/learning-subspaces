@@ -50,22 +50,6 @@ def write_result_to_csv(**kwargs):
     with open(results, "a+") as f:
         s = ", ".join([str(v) for k, v in kwargs.items() if k not in tmp])
         if s is not None:
-            print(type((
-                    "{now}, "
-                    "{name}, "
-                    "{curr_acc1:.04f}, "
-                    "{best_acc1:.04f}, "
-                    "{train_loss:.04f}, "
-                    "{s}\n")
-                .format(now=now, s=s, **kwargs)))
-            print((
-                    "{now}, "
-                    "{name}, "
-                    "{curr_acc1:.04f}, "
-                    "{best_acc1:.04f}, "
-                    "{train_loss:.04f}, "
-                    "{s}\n").format(now=now, s=s, **kwargs)
-                )
             f.write(
                 (
                     "{now}, "

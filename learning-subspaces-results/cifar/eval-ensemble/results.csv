@@ -1,0 +1,15 @@
+Date Finished,Name,curr_acc1,best_acc1,train_loss,ece,epoch
+05-24-23_14:10:15, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=0+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0
+05-24-23_14:10:15, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=0+try=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0
+05-24-23_14:10:25, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=1+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.7337907427310943, 0
+05-24-23_14:10:25, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=1+try=0, 0.0000, 0.0000, 0.0000, 0.7337907427310943, 0
+05-24-23_14:10:36, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=2+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.9930177984178066, 0
+05-24-23_14:10:36, id=ensmeble+ln=0.0+epochs=10+num_models=1+seed=2+try=0, 0.0000, 0.0000, 0.0000, 0.9930177984178066, 0
+05-24-23_14:10:46, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=0+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0
+05-24-23_14:10:46, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=0+try=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0
+05-24-23_14:10:56, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=1+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.7337907427310943, 0
+05-24-23_14:10:56, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=1+try=0, 0.0000, 0.0000, 0.0000, 0.7337907427310943, 0
+05-24-23_14:11:07, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=2+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.9930177984178066, 0
+05-24-23_14:11:07, id=ensmeble+ln=0.0+epochs=10+num_models=2+seed=2+try=0, 0.0000, 0.0000, 0.0000, 0.9930177984178066, 0
+05-24-23_14:11:17, id=ensmeble+ln=0.0+epochs=10+num_models=3+seed=0+try=0+curr_epoch=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0
+05-24-23_14:11:17, id=ensmeble+ln=0.0+epochs=10+num_models=3+seed=0+try=0, 0.0000, 0.0000, 0.0000, 0.9474796846598387, 0

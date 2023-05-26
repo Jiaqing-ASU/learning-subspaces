@@ -49,7 +49,7 @@ if __name__ == "__main__":
         args.lr_policy = "cosine_lr"
         args.log_interval = 100
         args.warmup_length = 5
-
+        
         name_string = (
             f"id=lines+ln={args.label_noise}"
             f"+beta={args.beta}"
@@ -59,21 +59,16 @@ if __name__ == "__main__":
 
         # Now, analyze.
 
-        # args.resume = [
-        #     f"learning-subspaces-results/cifar/one-dimesnional-subspaces/{name_string}+try=0/"
-        #     f"epoch_{args.epochs}_iter_{args.epochs * round(50000 / 128)}.pt"
-        # ] * 2
-
         args.resume = [
             f"learning-subspaces-results/cifar/one-dimesnional-subspaces/{name_string}+try=0/"
-            f"epoch_0_iter_0.pt",
-            f"learning-subspaces-results/cifar/one-dimesnional-subspaces/{name_string}+try=0/"
-            f"epoch_80_iter_31280.pt"
-        ]
+            f"epoch_{args.epochs}_iter_{args.epochs * round(50000 / 128)}.pt"
+        ] * 2
 
+        args.num_models = 2
         args.save = False
         args.save_data = True
         args.pretrained = True
+        args.epochs = 0
         args.trainer = "eval_one_dim_subspaces"
         args.update_bn = True
 
